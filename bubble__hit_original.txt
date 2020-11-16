@@ -1,0 +1,1 @@
+              bubble  |        bubble hit definitions  |                                   detId  | 0.1*KeV   |    0*ns   |    1*mm   |    1*cm   |    5*ns   |    8*ns   |     100   |     -20   |   50*ns  
