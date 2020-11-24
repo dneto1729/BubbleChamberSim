@@ -2,7 +2,7 @@ void bubbleFlux(){
   
   gROOT->Reset();
   
-#define MAX_nentries 900;
+ #define MAX_nentries 900;
   
   TString pstit;
   pstit = "bubbleFlux";
@@ -58,15 +58,17 @@ void bubbleFlux(){
   
   char runfile1[100];
   sprintf(runfile1,"out.root");
-  f1 = new TFile(runfile1);
+  TFile *f1 = new TFile("out.root");
+//  f1 = new TFile(runfile1);
+//  TFile *f1 = TFile::Open("out.root");
   
-  TTree *bubble = (TTree*)f1->Get("bubble");
-  TH1F* hS1  = new TH1F("hS1", "hS1",MAX_nentries,0.0,9.0);
-  TH1F* hS2  = new TH1F("hS2", "hS2",MAX_nentries,0.0,9.0);
-  bubble->Draw("kinE>>hS1","detId==1&&pid==22","");
+  TTree *bubble = (TTree *)f1->Get("bubble");
+  TH1F *hS1  = new TH1F("hS1", "hS1",900,0.0,9.0);
+  TH1F *hS2  = new TH1F("hS2", "hS2",900,0.0,9.0);
+  bubble->Draw("kinE>>hS1","detId==1 && pid==22","");
   hS1->Scale(scale); 
 
-  bubble->Draw("kinE>>hS2","detId==2&&pid==22","");
+  bubble->Draw("kinE>>hS2","detId==2 && pid==22","");
   hS2->Scale(scale); 
 
   ////  
@@ -93,8 +95,8 @@ void bubbleFlux(){
   hS1->GetYaxis()->CenterTitle();
   hS1->GetYaxis()->SetTitleOffset(1.0);
   hS1->GetYaxis()->SetTitleSize(0.06);
-  TString tit ="n_{#gamma} /(#muA s 0.01 MeV)";
-  hS1->GetYaxis()->SetTitle(tit.Data());
+  TString tit1 ="n_{#gamma} /(#muA s 0.01 MeV)";
+  hS1->GetYaxis()->SetTitle(tit1.Data());
   
   hS1->SetLineColor(kBlue);
   hS1->SetLineWidth(2.0);
@@ -110,7 +112,8 @@ void bubbleFlux(){
 
   ////
   
-  leg = new TLegend(0.2,0.25,0.45,0.45);
+  TLegend *leg = new TLegend(0.2,0.25,0.45,0.45);
+//  leg = new TLegend(0.2,0.25,0.45,0.45);
   leg->SetFillColor(0);
   leg->SetShadowColor(0);
   leg->AddEntry(hS1,"Radiator ","L");
