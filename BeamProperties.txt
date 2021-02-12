@@ -1,5 +1,5 @@
 Req T [MeV]	Deliv P [MeV/c]	Delta_P [MeV/c]	P_Theta [mrad]	P_Phi [mrad]	Beam_Vx [mm]	Beam_Vy [mm]	RMS_Hor_Size [mm]	RMS_Vert_Size [mm]
-4.00								
+4.00					4.482			
 4.75	        5.299	        1.76E-03	-6.40E-01	-1.06E+00	2.26	        -1.15	        1.698	                0.574
 4.85	        5.406	        1.72E-03	-1.90E+00	-3.42E+00	0.99	        -5.24	        0.867	                1.224
 4.95	        5.517	        1.27E-03	-1.63E+00	-3.80E-01	-0.26	        0.66	        1.510	                2.793
