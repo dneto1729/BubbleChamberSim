@@ -1,2 +1,2 @@
 # BubbleChamberSim
-Files for testing Geant4 bubble chamber simulations of https://github.com/gemc/detectors/injector
+Files for testing Geant4 bubble chamber simulations of https://github.com/gemc/detectors/tree/master/injector
