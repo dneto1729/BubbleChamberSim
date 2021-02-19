@@ -5,37 +5,37 @@
 <!-- Chamber Port Flange -->
     <volume name="plug_flange_beam_port_mod"
      color="a6a6a6"
-      position="0*cm 0*cm 20.34*cm"
+      position="0*cm 0*cm 19.75*cm"
        rotation="0*deg 0*deg 0*deg"
         material="G4_STAINLESS-STEEL"/>
 <!-- Chamber Port (which holds and insert) and has window into chamber -->
     <volume name="internal_coll_and_port"
      color="d4a440"
-      position="0*cm 0*cm 20.34*cm"
+      position="0*cm 0*cm 19.75*cm"
        rotation="0*deg 0*deg 0*deg"
         material="G4_Cu"/>
 <!-- Steel Chamber double check material -->
     <volume name="steel_vessel"
      color="adadad"
-      position="-15.24*cm -27.9405*cm 53.36*cm"
+      position="-15.24*cm -27.9405*cm 52.77*cm"
        rotation="90*deg 0*deg 0*deg"
         material="G4_STAINLESS-STEEL"/>
 <!-- Chamber Exit Port Flange -->
     <volume name="beam_exit_flange"
      color="a6a6a6"
-      position="0*cm 0*cm 55.9*cm"
+      position="0*cm 0*cm 55.31*cm"
        rotation="0*deg 180*deg 0*deg"
         material="G4_STAINLESS-STEEL"/>
 <!-- Chamber Exit Port -->
     <volume name="beam_exit_port_and_collimator"
      color="d4a440"
-      position="0*cm 0*cm 55.9*cm"
+      position="0*cm 0*cm 55.31*cm"
        rotation="0*deg 180*deg 0*deg"
         material="G4_Cu"/>
 <!-- Pb Pig double check position -->
     <volume name="Pb_pig"
      color="ad9dad"
-      position="55.9*cm -41.4*cm 12.58*cm"
+      position="55.9*cm -62.35*cm 37.53*cm"
        rotation="0*deg 0*deg 0*deg"
         material="G4_Pb"/>
 <!-- Still needs some final tweaks -DN -->
