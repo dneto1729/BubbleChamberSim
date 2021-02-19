@@ -1,5 +1,5 @@
 <gxml>
-<!-- This xml file contains the position, 3D angle and material data for the 8 detector elements which have PLY mesh files
+<!-- This xml file contains the position, 3D angle and material data for the 6 detector elements which have PLY mesh files
      and are called in the gcard as <dector name="cad/" factory="CAD"/> -->    
 <!-- Position and Rotation for all volumes needs to be double checked -->
 <!-- Chamber Port Flange -->
