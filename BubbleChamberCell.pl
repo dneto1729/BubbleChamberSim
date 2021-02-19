@@ -65,7 +65,7 @@ sub makeBubbleChamberCell()
     $detector{"color"}       = "aaaaaa4";
     $detector{"type"}        = "Polycone";
     $detector{"dimensions"}  = $dimen;
-    $detector{"material"}    = "G4_GLASS_PLATE";
+    $detector{"material"}    = "G4_Pyrex_Glass";
     $detector{"rotation"}    = "90*deg 0*deg 0*deg";
     $detector{"pos"}         = "0*cm $yshift*cm $glassCellZpos*cm";
     $detector{"style"}       = 1;
@@ -88,13 +88,13 @@ sub makeBubbleChamberCell()
     }
     
     %detector = init_det();
-    $detector{"name"}        = "n20Cell";
+    $detector{"name"}        = "c3f8Cell";
     $detector{"mother"}      = "glassCell";
     $detector{"description"} = "Bubble Chamber Gas";
     $detector{"color"}       = "44ffff4";
     $detector{"type"}        = "Polycone";
     $detector{"dimensions"}  = $dimen;
-    $detector{"material"}    = "G4_GLASS_PLATE";
+    $detector{"material"}    = "G4_Pyrex_Glass";
     $detector{"rotation"}    = "0*deg 0*deg 0*deg";
     $detector{"pos"}         = "0*cm 0*cm 0*cm";
     $detector{"style"}       = 1;
