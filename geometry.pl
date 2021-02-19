@@ -39,8 +39,6 @@ our %parameters    = get_parameters(%configuration);
 require "./BeamPipe.pl";
 require "./Radiator.pl";
 require "./Collimator.pl";
-require "./GammaPort.pl";
-require "./GammaBeamWindow.pl";
 require "./BubbleChamberCell.pl";
 require "./PhotonDump.pl";
 
