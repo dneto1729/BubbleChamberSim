@@ -1,9 +1,20 @@
-void bubbleFlux2(){
+// usage in root 
+// root[#] .x bubbleFlux2.C(Te, "InputFile"")
+// Te is electron energy in MeV and InputFile is the root file you want to run the macro over
+
+#include <iostream> // add
+
+void bubbleFlux2(Double_t Te, string RFile){
   
+  cout << "T_e = " << Te - 0.00<< " MeV" << endl;
+  cout << "Root file is = " << RFile << endl;
+
   gROOT->Reset();
   
   TString pstit;
   pstit = "bubbleFlux2";
+
+  pstit += RFile;
   
   // Define style here 
   // General parameters
@@ -40,8 +51,11 @@ void bubbleFlux2(){
   // TFile
   
   char runfile1[100];
-  sprintf(runfile1,"outT400.root");
-  TFile *f1 = new TFile("outT400.root");
+//  sprintf(runfile1,"outT400.root");
+//  TFile *f1 = new TFile("outT400.root");
+
+  sprintf(runfile1,"RFile");
+  TFile *f1 = new TFile(RFile.c_str());  
   
   // Fill Histograms
   
@@ -54,11 +68,12 @@ void bubbleFlux2(){
   // Quick Numbers  
 
   Double_t Ng = hS2->GetEntries();
-
   cout << "Total number of gammas in glass cell = " << Ng  << endl;
-
-  Double_t Ig = hS2->Integral(390,400); // Integrate over last 100 KeV
-
+  
+  Int_t LowerLimit =(int)((Te - 0.100)*100);
+  Int_t UpperLimit =(int)(Te*100);
+//  cout << "LL= " << LowerLimit << " and UL = " << UpperLimit << endl;
+  Double_t Ig = hS2->Integral(LowerLimit,UpperLimit); // Integrate over last 100 KeV
   cout << "Total number of gammas in last 100 KeV = " << Ig << endl;
 
   // Canvas
@@ -66,7 +81,6 @@ void bubbleFlux2(){
   TCanvas *g1 = new TCanvas("g1","Bubble Bremsstrahlung Spectrum",40,40,700,500);
   
   g1->SetGrid();
-
   hS1->SetMinimum(1.0e+0);
   hS1->SetMaximum(1.0e+8);
 
@@ -102,13 +116,16 @@ void bubbleFlux2(){
 
   // Legend
   
+  TString HeaderName;
+  HeaderName = "T_{e} = ";
+
   TLegend *leg = new TLegend(0.6489971,0.6995798,0.8997135,0.9012605,NULL,"brNDC");
   leg->SetFillColor(0);
   leg->SetShadowColor(0);
   leg->AddEntry(hS1,"Radiator ","L");
   leg->AddEntry(hS2,"Glass Cell ","L");
   leg->Draw();
-  leg->SetHeader("T_{e} = 4.00 MeV");
+  leg->SetHeader(HeaderName);
   leg->Draw();
   
   // Save as gif
