@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Builds the bubble__bank_(configuration).txt file
 # Usage ./bank.py config.dat
 
