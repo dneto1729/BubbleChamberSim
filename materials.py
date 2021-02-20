@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 # Builds the bubble__materials_(configuration).txt file
 # Usage ./materials.py config.dat
 

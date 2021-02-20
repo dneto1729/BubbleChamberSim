@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 # Builds the bubble__geometry_(configuration).txt file
 # Usage ./geometry.py config.dat
 

@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 # Builds the bubble__hit_(configuration).txt file
 # Usage ./hit.py config.dat
 
