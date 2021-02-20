@@ -1,0 +1,5 @@
+              bubble  |              bankid  |                                    bubble bank ID  | 2400   |                  Di  
+              bubble  |               detId  |                                     paddle number  |    1   |                  Di  
+              bubble  |                kinE  |                                    Kinetic Energy  |    2   |                  Dd  
+              bubble  |                 pid  |                                       particle id  |    3   |                  Di  
+              bubble  |                hitn  |                                        hit number  |   99   |                  Di  

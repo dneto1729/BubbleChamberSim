@@ -19,7 +19,7 @@ def build_BeamPipe(configuration):
         color="aabbcc",
         type="Polycone",
         dimensions="0.0*deg 360*deg 4*counts 1.7399*cm 1.7399*cm 1.7399*cm 1.7399*cm 3.429*cm 3.429*cm 1.905*cm 1.905*cm 0*cm 1.1176*cm 1.1176*cm 5.4864*cm",
-        material="G4_STAINLESS_STEEL",
+        material="G4_STAINLESS-STEEL",
         rotation="0*deg 0*deg 0*deg",
         pos="0*cm 0*cm -13.1064*cm",
         style="1")
@@ -63,7 +63,7 @@ def build_Radiator(configuration):
         color="ff0000",
         type="Tube",
         dimensions="0*cm 10*cm 0.1*mm 0*deg 360*deg",
-        material="G4_Air",
+        material="G4_AIR",
         rotation="0*deg 0*deg 0*deg",
         pos="0*cm 0*cm 0.2*cm",
         visible="0",
@@ -118,7 +118,7 @@ def build_BubbleChamberCell(configuration):
         style="1",
         sensitivity="bubble",
         hit_type="bubble",
-        detector="detId manual 2")
+        identifiers="detId manual 2")
     print_det(configuration, c3f8cell)
     
 def build_PhotonDump(configuration):

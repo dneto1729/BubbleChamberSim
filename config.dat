@@ -12,10 +12,10 @@ rmin:       1
 rmax:       10000
 
 # MYSQL server and databse if MYSQL factory is selected
-dbhost: clasdb.jlab.org
+#dbhost: clasdb.jlab.org
 
 # Comments/Description
-comment:       Bubble Chamber Experiment: September 2015 Test Setup
+comment:       Bubble Chamber Experiment - May 2018 Test Setup
 
 # Verbosity controls the perl script output
 verbosity: 0

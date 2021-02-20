@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # Builds the bubble__hit_(configuration).txt file
 # Usage ./hit.py config.dat
 
@@ -9,10 +11,10 @@ def define_hit(configuration):
         name="bubble",
         description="bubble hit definitions",
         identifiers="detId",
-        signalThreshold="0.1*KeV",
-        timeWindow="0*ns",
-        prodThreshold="1*mm",
-        maxStep="1*cm",
+        SignalThreshold="0.1*KeV",
+        TimeWindow="0*ns",
+        ProdThreshold="1*mm",
+        MaxStep="1*cm",
         delay="50*ns",
         riseTime="5*ns",
         fallTime="8*ns",
