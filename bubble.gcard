@@ -13,7 +13,7 @@
 
 
 	<!-- PhysListEmLivermore -->
-	<option name="PHYSICS" value="FTFP_BERT + LIV"/>
+	<option name="PHYSICS" value="FTFP_BERT + LIV + PhotoNuclear"/>
 
 	<option name="HALL_MATERIAL"    value="G4_AIR"/>
 	<option name="RECORD_PASSBY"    value="1"/>
