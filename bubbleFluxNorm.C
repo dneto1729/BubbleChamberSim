@@ -1,8 +1,8 @@
 // usage in root 
-// root[#] .x bubbleFluxNorm.C(Te, Ne0, "InputFile"")
+// root[#] .x bubbleFluxNorm.C(Te, Ne0, "InputFile")
 // Te is electron energy in MeV, Ne0 is the number of electrons simulated in Geant4 and InputFile
 // is the root file you want to run the macro over. Input file should be formated outT###.root. 
-// This does the normalized histograms (norm to 1 uA per s)
+// This does the normalized histograms (norm to 1 uA per s 0.01 MeV)
 
 #include <iostream> // add
 #include <iomanip> //add
