@@ -1,5 +1,5 @@
 // usage in root 
-// root[#] .x bubbleFlux2.C(Te, "InputFile")
+// root[#] .x bubbleFlux.C(Te, "InputFile")
 // Te is electron energy in MeV and InputFile is the root file you want to run the macro over
 
 #include <iostream> // add
