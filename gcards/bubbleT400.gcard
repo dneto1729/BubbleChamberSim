@@ -13,7 +13,7 @@
     <option name="SPREAD_V"       value="(0.0841, 0.)cm"/>
 
     <option name="LUMI_EVENT"     value="5001, 250*ns, 2*ns"/>
-    <option name="LUMI_P"         value="e-, 4.482*MeV, 0.0*mrad, 0.0*mrad"$
+    <option name="LUMI_P"         value="e-, 4.482*MeV, 0.0*mrad, 0.0*mrad"/>
     <option name="LUMI_V"         value="(0.0, 0.0, -5.)cm"/>
     <option name="LUMI_SPREAD_V"  value="(0.0841, 0.)cm"/>
 
