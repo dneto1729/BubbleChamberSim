@@ -1,0 +1,36 @@
+<gcard>
+	<detector name="bubble" factory="CAD"/>
+    <detector name="bubble" factory="TEXT" variation="original"/>
+	<option name="geometry" value="1400x1200"/>
+	<option name="RANDOM" value="TIME"/>
+    <option name="ENERGY_CUT" value="2.22*MeV"/>
+
+    <option name="BEAM_P"         value="e-, 4.482*MeV, 0.0*mrad, 0.0*mrad"$
+    <!-- This run uses the avg delta p from the other runs -->
+    <option name="SPREAD_P"       value="0.001*MeV, 0.0*mrad, 0.0*mrad"/>
+    <option name="BEAM_V"         value="(0.0, 0.0, -5.)cm"/>
+    <!-- This run uses the avg <r> from the other runs -->
+    <option name="SPREAD_V"       value="(0.0841, 0.)cm"/>
+
+    <option name="LUMI_EVENT"     value="5001, 250*ns, 2*ns"/>
+    <option name="LUMI_P"         value="e-, 4.482*MeV, 0.0*mrad, 0.0*mrad"$
+    <option name="LUMI_V"         value="(0.0, 0.0, -5.)cm"/>
+    <option name="LUMI_SPREAD_V"  value="(0.0841, 0.)cm"/>
+
+
+    <!--  Will print message every 1000 events -->
+    <option name="PRINT_EVENT"    value="1000" />
+
+    <option name="OUTPUT" value="evio, out.ev"/>
+
+
+    <!-- PhysListEmLivermore -->
+    <option name="PHYSICS" value="FTFP_BERT + LIV"/>
+
+    <option name="HALL_MATERIAL"    value="G4_AIR"/>
+    <option name="RECORD_PASSBY"    value="1"/>
+    <option name="SAVE_ALL_MOTHERS" value="0"/>
+    <option name="HALL_DIMENSIONS" value="1*m, 1*m, 2*m"/>
+    <option name="HIT_PROCESS_LIST" value="injector"/>
+
+</gcard>
