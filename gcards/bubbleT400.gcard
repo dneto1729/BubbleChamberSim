@@ -5,7 +5,7 @@
 	<option name="RANDOM" value="TIME"/>
     <option name="ENERGY_CUT" value="2.22*MeV"/>
 
-    <option name="BEAM_P"         value="e-, 4.482*MeV, 0.0*mrad, 0.0*mrad"$
+    <option name="BEAM_P"         value="e-, 4.482*MeV, 0.0*mrad, 0.0*mrad"/>
     <!-- This run uses the avg delta p from the other runs -->
     <option name="SPREAD_P"       value="0.001*MeV, 0.0*mrad, 0.0*mrad"/>
     <option name="BEAM_V"         value="(0.0, 0.0, -5.)cm"/>
