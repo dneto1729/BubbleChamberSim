@@ -45,8 +45,5 @@ require "./PhotonDump.pl";
 makeBeamPipe();
 makeRadiator();
 makeCollimator();
-makeGammaPort();
-makeGammaBeamWindow();
 makeBubbleChamberCell();
 makePhotonDump();
-
