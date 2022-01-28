@@ -1,29 +1,28 @@
 <gcard>
+	<!-- Build detector using G4 primatives (text) and PLY files (CAD) -->
 	<detector name="bubble" factory="TEXT" variation="original"/>
 	<detector name="cad/" factory="CAD"/>
 	<option name="geometry" value="1400x1200"/>
-		
+	
+	<!-- Beam parameters -->
 	<option name="BEAM_P"	      value="e-, 5.0*MeV, 0.*deg, 0.*deg"/>
 	<option name="SPREAD_P"       value="0.050*MeV, 0*deg, 0*deg"/>
 	<option name="BEAM_V" 	      value="(0., 0., -5.)cm"/>
 
 	<!--  Will print message every 10 events -->
-	<option name="PRINT_EVENT"    value="1" />
+	<option name="PRINT_EVENT"    value="10" />
+        
+	<!-- Save output as evio file in same directory as this gcard -->
+	<option name="OUTPUT" value="evio, out.ev"/>
 
-	<option name="OUTPUT" value="evio, /scratch/daneto/out.ev"/>
-
-
-	<!-- PhysListEmLivermore -->
+	<!-- Bertini cascade model for low energy Hadronic physics and PhysListEmLivermore for E&M -->
 	<option name="PHYSICS" value="FTFP_BERT + LIV"/>
 
 	<option name="HALL_MATERIAL"    value="G4_AIR"/>
 	<option name="RECORD_PASSBY"    value="1"/>
 	<option name="SAVE_ALL_MOTHERS" value="0"/>
 
-
 	<option name="HALL_DIMENSIONS" value="1*m, 1*m, 2*m"/>
 	<option name="HIT_PROCESS_LIST" value="injector"/>
-
-
 
 </gcard>
