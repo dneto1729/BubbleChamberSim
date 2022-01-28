@@ -19,5 +19,7 @@ def define_materials(configuration):
         description="Bubble Cell Oil",
         density="0.83", #g/cm^3
         ncomponents="2",
-        components="G4_H 13.9*perCent G4_C 86.1*perCent")
+        #components="G4_H 13.9*perCent G4_C 86.1*perCent") # estimate from Dark Matter Exp
+        components="G4_H 14.05*perCent G4_C 85.83*perCent") # avg of CHN analysis
     print_mat(configuration, MineralOil)
+    
