@@ -17,6 +17,8 @@
 
 	<!-- Bertini cascade model for low energy Hadronic physics and PhysListEmLivermore for E&M -->
 	<option name="PHYSICS" value="FTFP_BERT + LIV"/>
+	<!-- Background study add PhotoNuclear and HP for better Neutron transport -->
+	<!-- <option name="PHYSICS" value="FTFP_BERT_HP + LIV + PhotoNuclear"/> -->
 
 	<option name="HALL_MATERIAL"    value="G4_AIR"/>
 	<option name="RECORD_PASSBY"    value="1"/>
