@@ -9,6 +9,8 @@ use bank;
 use strict;
 use warnings;
 
+print "Be careful, adding RAW variables to BANK can greatly increase size of output files";
+
 # Help Message
 sub help()
 {
