@@ -8,13 +8,19 @@
       position="0*cm 0*cm 19.75*cm"
        rotation="0*deg 0*deg 0*deg"
         material="G4_STAINLESS-STEEL"/>
-<!-- Chamber Port (which holds and insert) and has window into chamber -->
+<!-- Chamber Port (which holds the insert) and has window into chamber -->
     <volume name="internal_coll_and_port"
      color="d4a440"
       position="0*cm 0*cm 19.75*cm"
        rotation="0*deg 0*deg 0*deg"
         material="G4_Cu"/>
-<!-- Steel Chamber double check material -->
+<!-- Gamma entrance collimator tungsten insert -->
+    <volume name="tungsten_insert"
+     color="b2cdf7"
+      position="0*cm 0*cm 19.75*cm" <!-- check, no clip -->
+       rotation"0*deg 0*deg 0*deg"
+        material="G4_W"/>
+<!-- Steel Chamber -->
     <volume name="steel_vessel"
      color="adadad"
       position="-15.24*cm -27.9405*cm 52.77*cm"
