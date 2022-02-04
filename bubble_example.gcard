@@ -3,6 +3,8 @@
 	<detector name="bubble" factory="TEXT" variation="original"/>
 	<detector name="cad/" factory="CAD"/>
 	<option name="geometry" value="1400x1200"/>
+	<option name="RANDOM" value="TIME"/>
+	<option name="ENERGY_CUT" value="0.010*MeV"/>
 	
 	<!-- Beam parameters -->
 	<option name="BEAM_P"	      value="e-, 5.0*MeV, 0.*deg, 0.*deg"/>
