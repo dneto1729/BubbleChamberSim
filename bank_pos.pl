@@ -54,8 +54,6 @@ sub define_bank
     insert_bank_variable(\%configuration, $bankname, "detId",       1,  "Di", "paddle number");
     insert_bank_variable(\%configuration, $bankname, "kinE",        2,  "Dd", "Kinetic Energy");
     insert_bank_variable(\%configuration, $bankname, "pid",         3,  "Di", "particle id");
-    insert_bank_variable(\%configuration, $bankname, "avg_lx",     11,  "Dd", "Average X position in local reference system");
-    insert_bank_variable(\%configuration, $bankname, "avg_ly",     12,  "Dd", "Average Y position in local reference system");
     insert_bank_variable(\%configuration, $bankname, "vx",         17,  "Dd", "x component of primary vertex of the particle entering the sensitive volume");
     insert_bank_variable(\%configuration, $bankname, "vy",         18,  "Dd", "y component of primary vertex of the particle entering the sensitive volume");
     insert_bank_variable(\%configuration, $bankname, "hitn",       99,  "Di", "hit number");
