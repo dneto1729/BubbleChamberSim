@@ -58,7 +58,7 @@ int beamBubblePosPlots(string RFile){
     h2s->GetYaxis()->SetTitle("y pos (mm)");
 
     // Save as png
-    pstit += ".gif";
+    pstit += ".png";
     c1->Print(pstit.Data());
 
     return 0;
