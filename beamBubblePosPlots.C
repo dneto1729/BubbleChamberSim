@@ -42,18 +42,18 @@ int beamBubblePosPlots(string RFile){
         72, -18.0, 18.0);
     // Draw 1D Histograms
     c1->cd(3);
-    bubble->Draw("vx>>h1x","detId==2 && pid==22","");
+    bubble->Draw("avg_x>>h1x","detId==2 && pid==22","");
     h1x->GetXaxis()->SetTitle("x pos (mm)");
     c1->cd(4);
-    bubble->Draw("vy>>h1y","detId==2 && pid==22","");
+    bubble->Draw("avg_y>>h1y","detId==2 && pid==22","");
     h1y->GetXaxis()->SetTitle("y pos (mm)");
     // Draw 2D Histograms
     c1->cd(1);
-    bubble->Draw("vy:vx>>h2c","detId==2 && pid==22","cont4z");
+    bubble->Draw("avg_y:avg_x>>h2c","detId==2 && pid==22","cont4z");
     h2c->GetXaxis()->SetTitle("x pos (mm)");
     h2c->GetYaxis()->SetTitle("y pos (mm)");
     c1->cd(2);
-    bubble->Draw("vy:vx>>h2s","detId==2 && pid==22","surf3z");
+    bubble->Draw("avg_y:avg_x>>h2s","detId==2 && pid==22","surf3z");
     h2s->GetXaxis()->SetTitle("x pos (mm)");
     h2s->GetYaxis()->SetTitle("y pos (mm)");
 
