@@ -25,6 +25,6 @@ def define_bank(configuration):
     insert_bank_variable(configuration, bankname, "kinE", 2, "Dd", "Kinetic Energy")
     insert_bank_variable(configuration, bankname, "pid", 3, "Di", "particle id")
     insert_bank_variable(configuration, bankname, "hitn", 99, "Di", "hit number")
-    insert_bank_variable(configuration, bankname, "vx", 17, "Dd", "x component of primary vertex of the particle entering the sensitive volume")
-    insert_bank_variable(configuration, bankname, "vy", 18, "Dd", "y component of primary vertex of the particle entering the sensitive volume")
+    insert_bank_variable(configuration, bankname, "avg_x", 8, "Dd", "Average X position in the global reference system (in mm)")
+    insert_bank_variable(configuration, bankname, "avg_y", 9, "Dd", "Average Y position in the global reference system")
         
