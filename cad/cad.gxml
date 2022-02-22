@@ -17,7 +17,7 @@
 <!-- Gamma entrance collimator tungsten insert -->
     <volume name="tungsten_insert"
      color="b2cdf7"
-      position="0*cm 0*cm 19.75*cm"
+      position="0*cm 0*cm 19.90*cm"
        rotation="0*deg 0*deg 0*deg"
         material="G4_W"/>
 <!-- Steel Chamber -->
