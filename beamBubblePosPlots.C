@@ -1,5 +1,5 @@
-// Make 2x2 canvas which shows contour plot, surface plot, 1D vx histogram and
-// 1D vy histogram. This is for gamma rays that reach the bubble cell
+// Make 2x2 canvas which shows contour plot, surface plot, 1D avg_x histogram and
+// 1D avg_y histogram. This is for gamma rays that reach the bubble cell
 // (detId = 2). "InputFile" is the root file you want to run the macro on. 
 // usage in root 
 // root[#] .x beamBubblePosPlots.C("InputFile")
