@@ -69,15 +69,20 @@ void bubbleFlux(Double_t Te, string RFile){
   bubble->Draw("kinE>>hS1","detId==1 && pid==22","");
   bubble->Draw("kinE>>hS2","detId==2 && pid==22","");
  
-  // Quick Numbers  
+  // Quick Numbers
 
-  Double_t Ng = hS2->GetEntries(); // Total number of gammas that reached bubble cell
+  // Total number of gammas that reached bubble cell
+  Double_t Ng = hS2->GetEntries();
   cout << "Total number of gammas in glass cell = " << Ng  << endl;
   
-  Int_t LowerLimit =(int)((Te - 0.100)*100);
-  Int_t UpperLimit =(int)(Te*100);
-  cout << "LL= " << LowerLimit << " and UL = " << UpperLimit << endl; // Check integral limits are correct
-  Double_t Ig = hS2->Integral(LowerLimit,UpperLimit); // Integrate over last 100 KeV
+  Double_t LowerLimit =(Te - 0.100);
+  Double_t UpperLimit =Te;
+  cout << "LL= " << LowerLimit << " and UL = " << UpperLimit << endl;
+  // ROOT integral uses bin number
+  Int_t BinLower = hS2->GetXaxis()->FindBin(LowerLimit);
+  Int_t BinUpper = hS2->GetXaxis()->FindBin(UpperLimit);
+  // Integrate over last 100 KeV
+  Double_t Ig = hS2->Integral(BinLower,BinUpper);
   cout << "Total number of gammas in last 100 KeV = " << Ig << endl;
 
   // Canvas
