@@ -41,6 +41,15 @@ sub print_materials
     $mat{"components"}    = "C 3 F 8";	
     print_mat(\%configuration, \%mat);
     
+    # Minearl Oil
+    my %mat = init_mat();
+    $mat{"name"}          = "MineralOil";
+    $mat{"description"}   = "Bubble Cell Oil";
+    $mat{"density"}       = "0.83"; # g/cm^3
+    $mat{"ncomponents"}   = "2";
+    $mat{"components"}    = "G4_H 14.05*perCent G4_C 85.83*perCent"; # Avg of CHN Analysis	
+    print_mat(\%configuration, \%mat);
+    
 }
 
 print_materials();
