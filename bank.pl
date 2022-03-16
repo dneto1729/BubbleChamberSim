@@ -52,6 +52,8 @@ sub define_bank
     insert_bank_variable(\%configuration, $bankname, "detId",       1,  "Di", "paddle number");
     insert_bank_variable(\%configuration, $bankname, "kinE",        2,  "Dd", "Kinetic Energy");
     insert_bank_variable(\%configuration, $bankname, "pid",         3,  "Di", "particle id");
+    insert_bank_variable(\%configuration, $bankname, "avg_x",       8,  "Dd", "Avg x pos global in mm");
+    insert_bank_variable(\%configuration, $bankname, "avg_y",       9,  "Dd", "Avg y pos global in mm");
     insert_bank_variable(\%configuration, $bankname, "hitn",       99,  "Di", "hit number");
 }
 
