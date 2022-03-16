@@ -27,4 +27,5 @@ def define_bank(configuration):
     insert_bank_variable(configuration, bankname, "hitn", 99, "Di", "hit number")
     insert_bank_variable(configuration, bankname, "avg_x", 8, "Dd", "Average X position in the global reference system (in mm)")
     insert_bank_variable(configuration, bankname, "avg_y", 9, "Dd", "Average Y position in the global reference system")
+    insert_bank_variable(configuration, bankname, "procID", 25, "Dd", "Process that created the FP")
         
