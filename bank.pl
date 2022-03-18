@@ -52,8 +52,12 @@ sub define_bank
     insert_bank_variable(\%configuration, $bankname, "detId",       1,  "Di", "paddle number");
     insert_bank_variable(\%configuration, $bankname, "kinE",        2,  "Dd", "Kinetic Energy");
     insert_bank_variable(\%configuration, $bankname, "pid",         3,  "Di", "particle id");
+    insert_bank_variable(\%configuration, $bankname, "trackE",      6,  "Dd", "Total energy of the FP");    
     insert_bank_variable(\%configuration, $bankname, "avg_x",       8,  "Dd", "Avg x pos global in mm");
     insert_bank_variable(\%configuration, $bankname, "avg_y",       9,  "Dd", "Avg y pos global in mm");
+    insert_bank_variable(\%configuration, $bankname, "px",         14,  "Dd", "x component of momentum of the FP (in MeV)");
+    insert_bank_variable(\%configuration, $bankname, "py",         15,  "Dd", "y component of momentum of the FP");
+    insert_bank_variable(\%configuration, $bankname, "pz",         16,  "Dd", "z component of momentum of the FP");    
     insert_bank_variable(\%configuration, $bankname, "hitn",       99,  "Di", "hit number");
 }
 
