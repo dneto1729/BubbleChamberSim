@@ -12,7 +12,7 @@
 	<!-- Beam parameters -->
 	<option name="BEAM_P"	      value="e-, 5.0*MeV, 0.0*deg, 0.0*deg"/>
 	<option name="SPREAD_P"       value="0.050*MeV, 0.0*deg, 0.0*deg"/>
-	<option name="BEAM_V" 	      value="(0.0, 0.0, -5.)cm"/>
+	<option name="BEAM_V"	      value="(0.0, 0.0, -5.)cm"/>
 	
 	<!-- Lumi events parameters -->
 	<!-- <option name="LUMI_EVENT"     value="5001, 250*ns, 2*ns"/> -->

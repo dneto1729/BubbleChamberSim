@@ -1,8 +1,9 @@
 <gcard>
-	<detector name="bubble" factory="CAD"/>
-    <detector name="bubble" factory="TEXT" variation="original"/>
-	<option name="geometry" value="1400x1200"/>
-	<option name="RANDOM" value="TIME"/>
+    <!-- Change path to cad directory as needed -->
+    <detector name="cad/"     factory="CAD"/>
+    <detector name="bubble"   factory="TEXT" variation="original"/>
+    <option name="geometry"   value="1400x1200"/>
+    <option name="RANDOM"     value="TIME"/>
     <option name="ENERGY_CUT" value="2.22*MeV"/>
 
     <option name="BEAM_P"         value="e-, 5.703*MeV, -3.73*mrad, 0.20*mrad"/>
@@ -28,7 +29,7 @@
     <option name="HALL_MATERIAL"    value="G4_AIR"/>
     <option name="RECORD_PASSBY"    value="1"/>
     <option name="SAVE_ALL_MOTHERS" value="0"/>
-    <option name="HALL_DIMENSIONS" value="1*m, 1*m, 2*m"/>
+    <option name="HALL_DIMENSIONS"  value="1*m, 1*m, 2*m"/>
     <option name="HIT_PROCESS_LIST" value="injector"/>
 
 </gcard>
